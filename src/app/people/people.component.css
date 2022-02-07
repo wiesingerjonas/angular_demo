@@ -1,0 +1,21 @@
+#wrapper div {
+  border: 2px solid black;
+  min-width: fit-content;
+  width: 80%;
+  padding: 0 2.5% 2.5% 2.5%;
+  border-radius: 5px;
+  margin: 1% 10%;
+}
+#wrapper {
+  float: left;
+  width: 50%;
+}
+app-persondetail {
+  width: 20%;
+  display: block;
+  margin-left: 60%;
+  position: fixed;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+

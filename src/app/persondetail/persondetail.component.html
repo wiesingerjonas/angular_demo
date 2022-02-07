@@ -1,0 +1,24 @@
+<form>
+  <fieldset>
+    <mat-form-field formGroupName="personalInformation">
+      <mat-label>Name</mat-label>
+      <input formControlName="name" matInput type="text" [value]="person.name">
+    </mat-form-field>
+    <br>
+    <mat-form-field formGroupName="personalInformation">
+      <mat-label>Username</mat-label>
+      <input formControlName="username" matInput type="text" [value]="person.username">
+    </mat-form-field>
+    <br>
+    <mat-form-field formGroupName="personalInformation">
+      <mat-label>Email</mat-label>
+      <input formControlName="email" matInput type="text" [value]="person.email">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <mat-label>Company</mat-label>
+      <input formControlName="company" matInput type="text" [value]="person.company.name">
+    </mat-form-field>
+  </fieldset>
+</form>
+<button mat-flat-button color="primary" (click)="updatePerson()">Save</button>

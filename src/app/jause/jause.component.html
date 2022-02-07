@@ -1,0 +1,14 @@
+<h2>Jausnstation</h2>
+<button mat-flat-button routerLink="" color="primary">Back</button>
+<br>
+<mat-form-field>
+  <mat-label>Wö da wos aus!</mat-label>
+  <mat-select *ngIf="types" [(value)]="selected">
+    <mat-option *ngFor="let type of types" [value]="type">
+      {{type}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<p><b>selected:</b>{{selected}}</p>
+<app-moizeit [selected]="selected"></app-moizeit>

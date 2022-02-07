@@ -1,0 +1,16 @@
+<button mat-flat-button routerLink="" color="primary">Back</button>
+<div id="wrapper">
+  <div *ngFor="let person of people">
+
+    <p mat-card-content><b>Name:</b> {{person.name}}</p>
+    <p mat-card-content><b>Username:</b> {{person.username}}</p>
+    <p mat-card-content><b>Email:</b> {{person.email}}</p>
+    <p mat-card-content><b>Company:</b> {{person.company.name}}</p>
+
+    <button mat-raised-button color="accent" (click)="selectPerson(person)">select</button>
+  </div>
+</div>
+
+<app-persondetail id="persondetail" *ngIf="clicked" [person]="selectedPerson!" (updatedPerson)="handleOutput($event)"></app-persondetail>
+
+
